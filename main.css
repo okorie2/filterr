@@ -1,0 +1,64 @@
+body{
+    background-color:#FFCBA4;
+    color:coral;
+    overflow-x: hidden;
+}
+.main{
+    margin:auto;
+    
+}
+li{
+    float: left;
+    list-style-type: none;
+    padding-right:4rem;
+}
+ul{
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+
+a{
+    color: coral;
+    text-decoration:none ;
+}
+a:hover{
+    background-color: lightpink;
+}
+h3{
+    text-align: "center";
+}
+
+.navbar{
+    position: absolute;
+    margin-left: 33.3%;
+    top: 1.5%;
+
+
+}
+*{
+    box-sizing: border-box;
+}
+
+  
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+
