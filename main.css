@@ -28,7 +28,17 @@ a:hover{
 h3{
     text-align: "center";
 }
-
+input[type=text]:focus{
+    background-color:#E6E6E6;
+}
+button{
+    background-color: coral;
+    color: whitesmoke;
+    width:100%;
+    cursor: pointer;
+    text-decoration:none;
+    border: none;
+}
 .navbar{
     position: absolute;
     margin-left: 33.3%;
