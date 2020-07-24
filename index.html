@@ -2,23 +2,22 @@
     <head>
         <title> Cilla's Cuisine</title>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     </head>
     <body>
-        
-        <div id="navbar">
-             <ul>
-                <li style="float: left;;"><a href="#" >Cilla's</a><ul class="navbar">
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#">contact </li>
-                    <li><a href="#">about</a></li>
-                </ul></li>
-                
-            </ul>
- 
-        </div><br>
-        <div class="row">
-            <div id="welcome" class="column" style="background-color: #F7F7F7;">
+        <div class="navbar"  class="col-12" id="myNavbar">
+             <ul >
+                   <a href="#" class="active">Cilla</a> 
+                    <a href="#">Home</a>
+                    <a href="#">contact</a>
+                    <a href="#">about</a>
+                    <a href="javascript:void(0);" class="icon" onclick="expandButton()"></a>
+                    <i class="fa fa-bars"></i>
+                    
+                </ul>
+         </div><br>
+            <div id="welcome"  style=" height: fit-content;">
                 <h3 style="text-align: center;">welcome to Cilla's Cuisine!</h3>
                 <p>here you get the most ezquisite of delicacies. our goal is to satisfy you and ensure you leave with a smile!</p>
                 <p>we also offer our customers loyalty cards for bonuses. Order away!</p>
@@ -30,32 +29,38 @@
                      <li><button type="button" class="btn"onclick="filterSelector('people')">pastries</button></li>
                      <li><button type="button" class="btn"onclick="filterSelector('nature')">pastries</button></li>
                 </ul>
-                <div id="container"><!--portfolio gallery container-->
-                </div><!--end of container-->
+                <div id="container"></div><!--end of container-->
             </div>
-                <div id="order" class="column" style="background-color: #6A1526;">
-                    <h3 style="text-align: center;">place your order!</h3> 
-                    <p>you can order a three course meal at very affordable prices. Cheers!</p>
-                    <form>
-                        <label><h4>appetizers</h4></label>
-                        <input type="text" value="pepper soup and bread" style="text-align: center;"><input type="radio" name="appetizers">
-                        <input type="text" value="oat meal" style="text-align: center;"><input type="radio" name="appetizers">
-                        <input type="text" value="wheat and syrup" style="text-align: center;"><input type="radio" name="appetizers"> <br><br>
-                        <label><h4>Main dish</h4></label>
-                        <input type="text" value="fried rice and chicken breast" style="text-align: center;"><input type="radio" name="main dish">
-                        <input type="text" value="poumded yam and egusi " style="text-align: center;"><input type="radio" name="main dish">
-                        <input type="text" value="yamaritta and eggs" style="text-align: center;"><input type="radio" name="main dish"><br><br>
-                        <input type="text" value="basmati rice and stew" style="text-align: center;"><input type="radio" name="main dish">
-                        <input type="text" value="beans and garri" style="text-align: center;"><input type="radio" name="main dish">
-                        <input type="text" value="tuwo shinkafa" style="text-align: center;"><input type="radio" name="main dish"> <br><br>
-                        <label><h4>Dessert</h4></label>
-                        <input type="text" value="rich creamed sundae" style="text-align: center;"><input type="radio" name="dessert">
-                        <input type="text" value=" banana flambe and yoghurt" style="text-align: center;"><input type="radio" name="dessert">
-                        <input type="text" value="chocolate icecream" style="text-align: center;"><input type="radio" name="dessert"><br><br>
-
-
-                    </form>
-                    <h3 style="text-align: right;">Price total: $200.00 </h3>
+        <div class="row">
+            <div id="order" class="col-8" style="background-color: #6A1526;">
+                <h3 style="text-align: center;">place your order!</h3> 
+                <p>you can order a three course meal at very affordable prices. Cheers!</p>
+                <form>
+                    <label><h4>appetizers</h4></label>
+                    <input type="text" value="pepper soup and bread" style="text-align: center;"><input type="radio" name="appetizers">
+                    <input type="text" value="oat meal" style="text-align: center;"><input type="radio" name="appetizers">
+                    <input type="text" value="wheat and syrup" style="text-align: center;"><input type="radio" name="appetizers"> <br><br>
+                    <label><h4>Main dish</h4></label>
+                    <input type="text" value="fried rice and chicken breast" style="text-align: center;"><input type="radio" name="main dish">
+                    <input type="text" value="poumded yam and egusi " style="text-align: center;"><input type="radio" name="main dish">
+                    <input type="text" value="yamaritta and eggs" style="text-align: center;"><input type="radio" name="main dish"><br>
+                    <input type="text" value="basmati rice and stew" style="text-align: center;"><input type="radio" name="main dish">
+                    <input type="text" value="beans and garri" style="text-align: center;"><input type="radio" name="main dish">
+                    <input type="text" value="tuwo shinkafa" style="text-align: center;"><input type="radio" name="main dish"> <br><br>
+                    <label><h4>Dessert</h4></label>
+                    <input type="text" value="rich creamed sundae" style="text-align: center;"><input type="radio" name="dessert">
+                    <input type="text" value=" banana flambe and yoghurt" style="text-align: center;"><input type="radio" name="dessert">
+                    <input type="text" value="chocolate icecream" style="text-align: center;"><input type="radio" name="dessert"><br><br>
+                </form>
+                <h3 style="text-align: right;">Price total:</h3>
+            </div>
+            
+            <div id="feedback" class="col-4">
+                        <h4>heartwarming feedback</h4>
+                        <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
+                        <h5><i>Ella</i></h5>
+                    </div>
+                
                     <h3>please fill the form below</h3>
                     <form>
                         <label>Name</label>
@@ -87,14 +92,7 @@
                     <li>contact</li> <li>copyright</li>
                 </ul>
             </div>
-            <div id="feedback">
-                <h4>heartwarming feedback</h4>
-                <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
-                <h5><i>Ella</i></h5>
             
-            
-            </div>
-        
 
 
 
