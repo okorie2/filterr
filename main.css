@@ -3,13 +3,9 @@ body{
     color:coral;
     overflow-x: hidden;
     font-size: 5vw;
-    ​margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
-p{
-     text-indent:auto;
-     
-}
+
 *{
     box-sizing: border-box;
 }
@@ -19,12 +15,14 @@ li{
     list-style-type: none;
     padding-right:2vh;
     font-size: 3vh;
+    
 
 
 }
 ul{
     font-size: 1.6rem;
     padding: 1.3vh;
+    
 }
 
 
@@ -57,11 +55,10 @@ button{
     text-decoration:none;
     border: none;
     font-size: 1rem;
-    
-
 }
+
 #welcome{
-    background-color: #F7F7F7;;
+    background-color: #F7F7F7;
 }
 
 .navbar a {
@@ -82,12 +79,16 @@ button{
     color: black;
 }
 .navbar .icon {
-    display: none;   
+    display: none;
+    position: absolute;
+    top: 40%; 
+    left: 70%;  
 }
 img{
     max-width: 100%;
     height: auto;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
+    padding-top: 5%;
 }
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
@@ -124,12 +125,11 @@ img{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 [class*="col-"]{
-    width: 100%;
     float: left;
     padding: 15px;
 }
 .row::after{
-    
+    content: "";
     float: none;
     display: table;
 }

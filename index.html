@@ -21,13 +21,14 @@
             </ul>
         </div>
         
-        <div id="welcome" style=" height: fit-content;margin-top: 70px;">
+        <div id="welcome" style=" height: fit-content;margin-top: 70px; padding-bottom: 10%;">
             <h3 style="text-align: center;">welcome to Cilla's Cuisine!</h3>
             <p>here you get the most ezquisite of delicacies. our goal is to satisfy you and ensure you leave with a smile!</p>
             <p>we also offer our customers loyalty cards for bonuses. Order away!</p>
         
-            <h3 style="text-align: center;">our menu</h3>
+            
             <ul>
+                <p style="text-align: center;">our menu</p>
                 <li><button type="button" class="btn-active" onclick="filterSelector('all')">all</button></li> 
                 <li><button type="button" class="btn" onclick="filterSelector('cars')">meals</button></li> 
                 <li><button type="button" class="btn"onclick="filterSelector('people')">pastries</button></li>
@@ -35,73 +36,77 @@
             </ul>
             <div id="container"></div><!--end of container-->
         </div>
-        <div class="row">
-            <div id="order" class="col-8" style="background-color: #6A1526;">
+        <div>
+            <div id="order"  style="background-color: #6A1526;">
                 <h3 style="text-align: center;">place your order!</h3> 
                 <p>you can order a three course meal at very affordable prices. Cheers!</p>
                 <form>
                     <label><h4>appetizers</h4></label>
                     <input type="text" value="pepper soup and bread" style="text-align: center;">
-                    <input type="radio" name="appetizers">
+                    <input type="radio" name="appetizers"><br>
                     <input type="text" value="oat meal" style="text-align: center;">
-                    <input type="radio" name="appetizers">
+                    <input type="radio" name="appetizers"><br>
                     <input type="text" value="wheat and syrup" style="text-align: center;">
                     <input type="radio" name="appetizers">
-                    <br><br>
+                    
                     <label><h4>Main dish</h4></label>
                     <input type="text" value="fried rice and chicken breast" style="text-align: center;">
-                    <input type="radio" name="main dish">
+                    <input type="radio" name="main dish"><br>
                     <input type="text" value="poumded yam and egusi " style="text-align: center;">
-                    <input type="radio" name="main dish">
+                    <input type="radio" name="main dish"><br>
                     <input type="text" value="yamaritta and eggs" style="text-align: center;">
-                    <input type="radio" name="main dish">
-                    <br>
+                    <input type="radio" name="main dish"><br>
                     <input type="text" value="basmati rice and stew" style="text-align: center;">
-                    <input type="radio" name="main dish">
+                    <input type="radio" name="main dish"><br>
                     <input type="text" value="beans and garri" style="text-align: center;">
-                    <input type="radio" name="main dish">
+                    <input type="radio" name="main dish"><br>
                     <input type="text" value="tuwo shinkafa" style="text-align: center;">
                     <input type="radio" name="main dish">
-                    <br><br>
+                    
                     <label><h4>Dessert</h4></label>
                     <input type="text" value="rich creamed sundae" style="text-align: center;">
-                    <input type="radio" name="dessert">
+                    <input type="radio" name="dessert"><br>
                     <input type="text" value=" banana flambe and yoghurt" style="text-align: center;">
-                    <input type="radio" name="dessert">
+                    <input type="radio" name="dessert"><br>
                     <input type="text" value="chocolate icecream" style="text-align: center;">
-                    <input type="radio" name="dessert">
+                    <input type="radio" name="dessert"><br>
                     <br><br>
                 </form>
                 <h3 style="text-align: right;">Price total:</h3>
             </div>
             
-            <div id="feedback" class="col-4">
-                <h4>heartwarming feedback</h4>
-                <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
-                <h5><i>Ella</i></h5>
+            
+            <div>
+                <h3>please fill the form below</h3>
+                <form>
+                    <label>Name</label>
+                    <input type="text" style="margin-left: 23%;">
+                    <br><br>
+                    <label>Email address</label>
+                    <input type="email" style="margin-left: 15%;" placeholder="ellahokorie@gmail.com">
+                    <br><br>
+                    <label>Phone number</label>
+                    <input type="tel" style="margin-left: 15%;" placeholder="07033846285">
+                    <br><br>
+                    <label>address</label>
+                    <input type="text" style="margin-left: 22%;">
+                    <br><br>
+                    <textarea placeholder="who referred you to us?" style=" width: 55%; height:15% ;"></textarea>
+                    <br>
+                    <button type="reset" onclick="submitForm()">submit</button>
+                    <p id="submitForm"></p>
+                </form>
             </div>
-                
-            <h3>please fill the form below</h3>
-            <form>
-                <label>Name</label>
-                <input type="text" style="margin-left: 23%;">
-                <br><br>
-                <label>Email address</label>
-                <input type="email" style="margin-left: 15%;" placeholder="ellahokorie@gmail.com">
-                <br><br>
-                <label>Phone number</label>
-                <input type="tel" style="margin-left: 15%;" placeholder="07033846285">
-                <br><br>
-                <label>address</label>
-                <input type="text" style="margin-left: 22%;">
-                <br><br>
-                <textarea placeholder="who referred you to us?" style=" width: 55%; height:15% ;"></textarea>
-                <br>
-                <button type="reset" onclick="submitForm()">submit</button>
-                <p id="submitForm"></p>
-            </form>
+        
+        <div id="feedback" class="col-4">
+            <h4>heartwarming feedback</h4>
+            <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
+            <h5><i>Ella</i></h5> 
         </div>
-    </div>
+        
+            
+        
+    
 
     <div id="navbar3">
         <ul>
@@ -122,3 +127,4 @@
     </script>
     </body>
 </html>
+© 2020 GitHub, Inc.

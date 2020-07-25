@@ -5,42 +5,51 @@ function submitForm(){
 let data = [
     {
         category: "people",
-        src: "people1.jpg"
+        src: "people1.jpg",
+        name: "shit"
     },
     {
         category:"people",
-        src:"people2.jpg"
+        src:"people2.jpg",
+        name: "shit"
 
     },
     {
         category:"people",
-        src:"people3.jpg"
+        src:"people3.jpg",
+        name: "shit"
     },
     {
         category: "cars",
-        src: "cars1.jpg"
+        src: "cars1.jpg",
+        name: "shit"
     },
     {
         category:"cars",
-        src:"cars2.jpg"
+        src:"cars2.jpg",
+        name: "shit"
 
     },
     {
         category:"cars",
-        src:"cars3.jpg"
+        src:"cars3.jpg",
+        name: "shit"
     },
     {
         category: "nature",
-        src: "lights.jpg"
+        src: "lights.jpg",
+        name: "shit"
     },
     {
         category:"nature",
-        src:"mountains.jpg"
+        src:"mountains.jpg",
+        name: "shit"
 
     },
     {
         category:"nature",
-        src:"nature.jpg"
+        src:"nature.jpg",
+        name: "shit"
     }
 ]
 const container= document.getElementById('container');
@@ -52,7 +61,7 @@ function filterSelector(selectElement){
             continue;
         }
         
-        container.innerHTML+=`<img src="${data[i].src}">`
+        container.innerHTML+=`<img src="${data[i].src}">`+ data[i].name;
     }
 
 }
