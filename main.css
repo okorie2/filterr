@@ -8,6 +8,8 @@ body{
 
 *{
     box-sizing: border-box;
+    margin: 0vw;
+
 }
 
 li{
@@ -99,7 +101,7 @@ img{
     padding-bottom: 4%;
     padding-top: 5%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 380px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -123,7 +125,7 @@ img{
  
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 380px) {
   .navbar.responsive {
       position: relative;
       
