@@ -1,5 +1,5 @@
 body{
-    background-color:#FFCBA4;
+    background-color: #F7F7F7;
     color:coral;
     overflow-x: hidden;
     font-size: 5vw;
@@ -58,7 +58,8 @@ button{
 }
 
 #welcome{
-    background-color: #F7F7F7;
+    background-color:#FFCBA4 ;
+    width: 100vw;
 }
 
 .navbar a {
@@ -66,6 +67,9 @@ button{
   display: block;
   text-align: center;
   padding: 14px 16px;
+}
+#order{
+    width:100vw
 }
 
 .navbar{
@@ -100,15 +104,34 @@ img{
   .navbar a.icon {
     float: right;
     display: block;
+    position: absolute;
+    left: 50vw;
+    top: 80%;
   }
+  .contactArea input[type=text]{
+      margin-left: 30%;
+  }
+  .contactArea input[type=email]{
+     margin-left: 11.3%;
+  }
+  .contactArea input[type=tel]{
+    margin-left: 9.5%;
+ }
+ .contactArea #address{
+    margin-left: 25.5%;
+ }
+ 
 }
 
 @media screen and (max-width: 720px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+      position: relative;
+      
+}
   .navbar.responsive .icon {
     position: absolute;
-    right: 0;
-    top: 30;
+    right: 10%;
+    top: 80%;
   }
   .navbar.responsive a {
     float: none;
@@ -137,4 +160,7 @@ img{
     content: "";
     float: none;
     display: table;
+}
+.active{
+    margin-right: 80%;
 }

@@ -9,7 +9,7 @@
         
         <div class="navbar" id="myNavbar" >
             <ul >
-                <a href="#" class="active" style="margin-right: 250px;">Cilla</a>
+                <a href="#" class="active">Cilla</a>
                 <a href="#">Home</a>
                 <a href="#">contact</a>
                 <a href="#">about</a></li>
@@ -42,56 +42,65 @@
                 <p>you can order a three course meal at very affordable prices. Cheers!</p>
                 <form>
                     <label><h4>appetizers</h4></label>
-                    <input type="text" value="pepper soup and bread" style="text-align: center;">
-                    <input type="radio" name="appetizers"><br>
-                    <input type="text" value="oat meal" style="text-align: center;">
-                    <input type="radio" name="appetizers"><br>
-                    <input type="text" value="wheat and syrup" style="text-align: center;">
                     <input type="radio" name="appetizers">
+                    <input type="text" value="pepper soup and bread" style="text-align: center;"><br>
                     
+                    <input type="radio" name="appetizers">
+                    <input type="text" value="oat meal" style="text-align: center;"><br>
+                    <input type="radio" name="appetizers">
+                    <input type="text" value="wheat and syrup" style="text-align: center;">
+
                     <label><h4>Main dish</h4></label>
-                    <input type="text" value="fried rice and chicken breast" style="text-align: center;">
-                    <input type="radio" name="main dish"><br>
-                    <input type="text" value="poumded yam and egusi " style="text-align: center;">
-                    <input type="radio" name="main dish"><br>
-                    <input type="text" value="yamaritta and eggs" style="text-align: center;">
-                    <input type="radio" name="main dish"><br>
-                    <input type="text" value="basmati rice and stew" style="text-align: center;">
-                    <input type="radio" name="main dish"><br>
-                    <input type="text" value="beans and garri" style="text-align: center;">
-                    <input type="radio" name="main dish"><br>
-                    <input type="text" value="tuwo shinkafa" style="text-align: center;">
                     <input type="radio" name="main dish">
+                    <input type="text" value="fried rice and chicken breast" style="text-align: center;">
+                    <br>
+                    <input type="radio" name="main dish">
+                    <input type="text" value="poumded yam and egusi " style="text-align: center;">
+                    <br>
+                    <input type="radio" name="main dish">
+                    <input type="text" value="yamaritta and eggs" style="text-align: center;">
+                    <br>
+                    <input type="radio" name="main dish">
+                    <input type="text" value="basmati rice and stew" style="text-align: center;">
+                    <br>
+                    <input type="radio" name="main dish">
+                    <input type="text" value="beans and garri" style="text-align: center;">
+                    <br>
+                    <input type="radio" name="main dish">
+                    <input type="text" value="tuwo shinkafa" style="text-align: center;">
+                    
                     
                     <label><h4>Dessert</h4></label>
+                    <input type="radio" name="dessert">
                     <input type="text" value="rich creamed sundae" style="text-align: center;">
-                    <input type="radio" name="dessert"><br>
+                    <br>
+                    <input type="radio" name="dessert">
                     <input type="text" value=" banana flambe and yoghurt" style="text-align: center;">
-                    <input type="radio" name="dessert"><br>
+                    <br>
+                    <input type="radio" name="dessert">
                     <input type="text" value="chocolate icecream" style="text-align: center;">
-                    <input type="radio" name="dessert"><br>
-                    <br><br>
+                    <br>
                 </form>
                 <h3 style="text-align: right;">Price total:</h3>
             </div>
             
             
-            <div>
+            <div class="contactArea">
                 <h3>please fill the form below</h3>
                 <form>
                     <label>Name</label>
-                    <input type="text" style="margin-left: 33%;" placeholder="emmanuella">
-                    <br><br>
+                    <input type="text" placeholder="emmanuella">
+                    
                     <label>Email address</label>
-                    <input type="email" style="margin-left: 14%;" placeholder="ellahokorie@gmail.com">
+                    <input type="email"  placeholder="ellahokorie@gmail.com">
                     <br><br>
                     <label>Phone number</label>
-                    <input type="tel" style="margin-left: 13%;" placeholder="07033846285">
+                    <input type="tel" placeholder="07033846285">
                     <br><br>
                     <label>address</label>
-                    <input type="text" style="margin-left: 28%;" placeholder="charity street, lagos.">
+                    <input type="text" placeholder="charity street, lagos." id="address">
                     <br><br>
-                    <textarea placeholder="who referred you to us?" style=" width: 55%; height:15% ;"></textarea>
+                    <textarea placeholder="who referred you to us?" style=" width: 80%; height:15% ;"></textarea>
                     <br>
                     <button type="reset" onclick="submitForm()">submit</button>
                     <p id="submitForm"></p>
