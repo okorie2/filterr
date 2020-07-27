@@ -109,6 +109,7 @@ img{
     position: absolute;
     left: 50vw;
     top: 80%;
+    margin: 0vw;
   }
   .contactArea input[type=text]{
       margin-left: 30%;
