@@ -9,12 +9,12 @@
         
         <div class="navbar" id="myNavbar" >
             <ul >
-                <a href="#">Cilla</a>
+                <a href="#" id="active">Cilla </a>
                 <a href="#">Home</a>
                 <a href="#">contact</a>
                 <a href="#">about</a></li>
                
-                <a href="javascript:void(0);" class="icon" onclick="showmenu()">
+                <a href="javascript:void(0);" class="icon"  onclick="showmenu()">
                     <i class="fa fa-bars"></i>
                 </a>
                     
@@ -22,13 +22,13 @@
         </div>
         
         <div id="welcome" style=" height: fit-content;margin-top: 70px; padding-bottom: 10%;">
-            <h3 style="text-align: center;">welcome to Cilla's Cuisine! ifeanyi fine boyyy</h3>
+            <h1 style="text-align: center;">welcome to Cilla's Cuisine!</h1><br>
             <p>here you get the most ezquisite of delicacies. our goal is to satisfy you and ensure you leave with a smile!</p>
             <p>we also offer our customers loyalty cards for bonuses. Order away!</p>
         
             
             <ul>
-                <p style="text-align: center;">our menu</p>
+                <h4 style="text-align: center;">our menu</h4>
                 <li><button type="button" class="btn-active" onclick="filterSelector('all')">all</button></li> 
                 <li><button type="button" class="btn" onclick="filterSelector('cars')">meals</button></li> 
                 <li><button type="button" class="btn"onclick="filterSelector('people')">pastries</button></li>
@@ -38,7 +38,7 @@
         </div>
         <div>
             <div id="order"  style="background-color: #6A1526;">
-                <h3 style="text-align: center;">place your order!</h3> 
+                <h2 style="text-align: center;">place your order!</h2> <br>
                 <p>you can order a three course meal at very affordable prices. Cheers!</p>
                 <form>
                     <label><h4>appetizers</h4></label>
@@ -89,7 +89,7 @@
                 <h3>please fill the form below</h3>
                 <form>
                     <label>Name</label>
-                    <input type="text" placeholder="emmanuella">
+                    <input type="text" placeholder="emmanuella"><br>
                     
                     <label>Email</label>
                     <input type="email"  placeholder="ellahokorie@gmail.com">
@@ -112,12 +112,7 @@
             <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
             <h5><i>Ella</i></h5> 
         </div>
-        <div id="navbar3">
-        <ul>
-            <li>contact</li>
-            <li>copyright</li>
-        </ul>
-    </div>
+        
     <script type="text/javascript" src="filter.js"></script>
     ​<script>
         function showmenu() {
