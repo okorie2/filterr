@@ -1,58 +1,65 @@
  <html>
     <head>
         <title>Cilla's Cuisine</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
         
-        <div class="navbar" id="myNavbar" >
-            <ul >
-                <a href="#" id="active">Cilla </a>
-                <a href="#">Home</a>
-                <a href="#">contact</a>
-                <a href="#">about</a></li>
-               
-                <a href="javascript:void(0);" class="icon"  onclick="showmenu()">
-                    <i class="fa fa-bars"></i>
-                </a>
-                    
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
+            <a class="navbar-brand " href="index.html">cilla</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div id="bgImg">
+            <h1 style="text-align: center; position: relative; top: 40%;">welcome to Cilla's Cuisine!</h1><br>
+            
+          </div>
         
-        <div id="welcome" style=" height: fit-content;margin-top: 70px; padding-bottom: 10%;">
-            <h1 style="text-align: center;">welcome to Cilla's Cuisine!</h1><br>
+        <div id="welcome" >
+            
             <p>here you get the most ezquisite of delicacies. our goal is to satisfy you and ensure you leave with a smile!</p>
             <p>we also offer our customers loyalty cards for bonuses. Order away!</p>
-        
-            
             <ul>
-                <h4 style="text-align: center;">our menu</h4>
-                <li><button type="button" class="btn-active" onclick="filterSelector('all')">all</button></li> 
-                <li><button type="button" class="btn" onclick="filterSelector('cars')">meals</button></li> 
-                <li><button type="button" class="btn"onclick="filterSelector('people')">pastries</button></li>
-                <li><button type="button" class="btn"onclick="filterSelector('nature')">pastries</button></li>
-            </ul>
-            <div id="container"></div><!--end of container-->
-        </div>
-        <div>
-            <h2 style="text-align: center;">place your order!</h2> <br>
-            <p>you can order a three course meal at very affordable prices. Cheers!</p>
-            <div id="order"  style="background-color: #FBDBAC;">
-                
-                
-                <form>
-                    <label><h4>appetizers</h4></label>
+              <h3 style="text-align: center;"> Menu</h4>
+              <li><button type="button" onclick="filterSelector('all')">all</button></li> 
+              <li><button type="button" onclick="filterSelector('nature')"> cakes</button></li>
+              <li><button type="button" onclick="filterSelector('cars')">meals</button></li> 
+              <li><button type="button" onclick="filterSelector('people')">pastries</button></li>
+              
+          </ul><br>
+          <div id="container"></div><!--end of container--><br></div>
+            <div id="order">
+            
+       
+            <h4 style="text-align: center;">place your order!</h2> <br>
+            <p style="text-align: center;">you can order a three course meal at very affordable prices. Cheers!</p>
+            <form id="form"> 
+                    <label><h5>Appetizers</h4></label><br>
                     <input type="radio" name="appetizers">
                     <input type="text" value="pepper soup and bread" style="text-align: center;"><br>
                     
                     <input type="radio" name="appetizers">
                     <input type="text" value="oat meal" style="text-align: center;"><br>
                     <input type="radio" name="appetizers">
-                    <input type="text" value="wheat and syrup" style="text-align: center;">
+                    <input type="text" value="wheat and syrup" style="text-align: center;"><br><br>
 
-                    <label><h4>Main dish</h4></label>
+                    <label><h5>Main dish</h4></label><br>
                     <input type="radio" name="main dish">
                     <input type="text" value="fried rice and chicken breast" style="text-align: center;">
                     <br>
@@ -69,10 +76,10 @@
                     <input type="text" value="beans and garri" style="text-align: center;">
                     <br>
                     <input type="radio" name="main dish">
-                    <input type="text" value="tuwo shinkafa" style="text-align: center;">
+                    <input type="text" value="tuwo shinkafa" style="text-align: center;"><br><br>
                     
                     
-                    <label><h4>Dessert</h4></label>
+                    <label ><h5>Dessert</h4></label><br>
                     <input type="radio" name="dessert">
                     <input type="text" value="rich creamed sundae" style="text-align: center;">
                     <br>
@@ -83,52 +90,48 @@
                     <input type="text" value="chocolate icecream" style="text-align: center;">
                     <br>
                 </form>
-                <h3 style="text-align: right;">Price total:</h3>
-            </div>
-            
-            <h3>please fill the form below</h3>
-            <div class="contactArea" style="background-color: #FFFCF8;">
-                
-                <form>
+                <h5 style="text-align: right;">Price total:</h3> </div>
+    
+                <h6>please fill the form below</h6>
+                <form style="padding-left: 3%;">
                     <label>Name</label>
-                    <input type="text" placeholder="emmanuella"><br>
+                    <input style="margin-left:5%" type="text" placeholder="emmanuella"><br>
                     
                     <label>Email</label>
-                    <input type="email"  placeholder="ellahokorie@gmail.com">
+                    <input style="margin-left:6%" type="email"  placeholder="ellahokorie@gmail.com">
                     <br><br>
                     <label>Phone </label>
-                    <input type="tel" placeholder="07033846285">
+                    <input style="margin-left:4.7%" type="tel" placeholder="07033846285">
                     <br><br>
                     <label>address</label>
-                    <input type="text" placeholder="charity street, lagos." id="address">
+                    <input style="margin-left:2%" type="text" placeholder="charity street, lagos." id="address">
                     <br><br>
                     <textarea placeholder="who referred you to us?" style=" width: 80%; height:15% ;"></textarea>
-                    <br>
-                    <button type="reset" onclick="submitForm()">submit</button><br>
+                    <br><br>
+                    <button type="button" onclick="submitForm()">submit</button><br>
                     <p id="submitForm"></p><br>
                 </form>
             </div>
-            <h4 style="text-align:center;">heartwarming feedback</h4>
-            <div id="feedback" class="col-6">
-                <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
-                <h5><i>Ella</i></h5> 
-            </div> 
-            <div  class="col-6">
-            <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
-            <h5><i>Ella</i></h5> </div>
+            <div class="container px-lg-5">
+                <div class="row mx-lg-n5"></div>
+                <div class="col py-3 px-lg-5 border bg-light"><h4 style= "text-align:center;">heartwarming feedback</h4>
+                    <p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
+                    <h5><i>Ella</i></h5>
+                  <div class="col py-3 px-lg-5 border bg-light"><p>I have gotten the best experience from Cilla's Cuisine. They never disappoint!</p>
+                    <h5><i>Ella</i></h5></div>
+                </div>
+              </div>
+            
+            <div id="feedback">
+                
+             </div>
         
         
         
     <script type="text/javascript" src="filter.js"></script>
-    ​<script>
-        function showmenu() {
-          var x = document.getElementById("myNavbar");
-          if (x.className === "navbar") {
-            x.className += " responsive";
-          } else {
-            x.className = "navbar";
-          }
-        }
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

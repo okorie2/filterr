@@ -1,6 +1,6 @@
 function submitForm(){
     document.getElementById('submitForm').innerHTML= 
-    "Successful! Your order has been recorded and will be received within the next hour<nbr>Thanks for choosing us";
+    "Successful! Your order has been recorded and will be received within the next hour<nbr>Thanks for choosing us!";
 }
 let data = [
     {
