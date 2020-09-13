@@ -1,3 +1,31 @@
+const navbar = document.getElementById("navbar");
+const navbarToggle = navbar.querySelector(".navbar-toggle");
+
+function openMobileNavbar() {
+  navbar.classList.add("opened");
+  navbarToggle.setAttribute("aria-label", "Close navigation menu.");
+}
+
+function closeMobileNavbar() {
+  navbar.classList.remove("opened");
+  navbarToggle.setAttribute("aria-label", "Open navigation menu.");
+}
+
+navbarToggle.addEventListener("click", () => {
+  if (navbar.classList.contains("opened")) {
+    closeMobileNavbar();
+  } else {
+    openMobileNavbar();
+  }
+});
+const navbarMenu = navbar.querySelector(".navbar-menu");
+const navbarLinksContainer = navbar.querySelector(".navbar-links");
+
+navbarLinksContainer.addEventListener("click", (clickEvent) => {
+  clickEvent.stopPropagation();
+});
+
+navbarMenu.addEventListener("click", closeMobileNavbar);
 function submitForm(){
     document.getElementById('submitForm').innerHTML= 
     "Successful! Your order has been recorded and will be received within the next hour<nbr>Thanks for choosing us!";
@@ -5,50 +33,50 @@ function submitForm(){
 let data = [
     {
         category: "people",
-        src: "people1.jpg",
+        src: "menu1.jpg",
         name: "shit"
     },
     {
         category:"people",
-        src:"people2.jpg",
+        src:"menu2.jpg",
         name: "shit"
 
     },
     {
         category:"people",
-        src:"people3.jpg",
+        src:"menu3.jpg",
         name: "shit"
     },
     {
         category: "cars",
-        src: "cars1.jpg",
+        src: "menu4.jpg",
         name: "shit"
     },
     {
         category:"cars",
-        src:"cars2.jpg",
+        src:"menu5.jpg",
         name: "shit"
 
     },
     {
         category:"cars",
-        src:"cars3.jpg",
+        src:"menu6.jpg",
         name: "shit"
     },
     {
         category: "nature",
-        src: "lights.jpg",
+        src: "menu7.jpg",
         name: "shit"
     },
     {
         category:"nature",
-        src:"mountains.jpg",
+        src:"menu8.jpg",
         name: "shit"
 
     },
     {
         category:"nature",
-        src:"nature.jpg",
+        src:"menu9.jpg",
         name: "shit"
     }
 ]
