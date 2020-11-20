@@ -1,31 +1,11 @@
-const navbar = document.getElementById("navbar");
-const navbarToggle = navbar.querySelector(".navbar-toggle");
-
-function openMobileNavbar() {
-  navbar.classList.add("opened");
-  navbarToggle.setAttribute("aria-label", "Close navigation menu.");
+//navbar
+//const nav = document.querySelector("#")
+openNav=()=>{
+    document.getElementById("sidenav-toggle").style.width="250px";
 }
-
-function closeMobileNavbar() {
-  navbar.classList.remove("opened");
-  navbarToggle.setAttribute("aria-label", "Open navigation menu.");
+closeNav=()=>{
+    document.getElementById("sidenav-toggle").style.width="0px";
 }
-
-navbarToggle.addEventListener("click", () => {
-  if (navbar.classList.contains("opened")) {
-    closeMobileNavbar();
-  } else {
-    openMobileNavbar();
-  }
-});
-const navbarMenu = navbar.querySelector(".navbar-menu");
-const navbarLinksContainer = navbar.querySelector(".navbar-links");
-
-navbarLinksContainer.addEventListener("click", (clickEvent) => {
-  clickEvent.stopPropagation();
-});
-
-navbarMenu.addEventListener("click", closeMobileNavbar);
 function submitForm(){
     document.getElementById('submitForm').innerHTML= 
     "Successful! Your order has been recorded and will be received within the next hour<nbr>Thanks for choosing us!";
@@ -33,50 +13,50 @@ function submitForm(){
 let data = [
     {
         category: "people",
-        src: "menu1.jpg",
+        src: "/images/menu1.jpg",
         name: "shit"
     },
     {
         category:"people",
-        src:"menu2.jpg",
+        src:"/menu2.jpg",
         name: "shit"
 
     },
     {
         category:"people",
-        src:"menu3.jpg",
+        src:"/menu3.jpg",
         name: "shit"
     },
     {
         category: "cars",
-        src: "menu4.jpg",
+        src: "/menu4.jpg",
         name: "shit"
     },
     {
         category:"cars",
-        src:"menu5.jpg",
+        src:"/menu5.jpg",
         name: "shit"
 
     },
     {
         category:"cars",
-        src:"menu6.jpg",
+        src:"/menu6.jpg",
         name: "shit"
     },
     {
         category: "nature",
-        src: "menu7.jpg",
+        src: "/menu7.jpg",
         name: "shit"
     },
     {
         category:"nature",
-        src:"menu8.jpg",
+        src:"/menu8.jpg",
         name: "shit"
 
     },
     {
         category:"nature",
-        src:"menu9.jpg",
+        src:"/menu9.jpg",
         name: "shit"
     }
 ]
